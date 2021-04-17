@@ -1,0 +1,8 @@
+#foods-dropdown {
+    float: left;
+    margin-bottom: 100%; /* to prevent the #colB text wrapping beneath #colA */
+}
+
+#foods-button {
+    clear: right;
+}

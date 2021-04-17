@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" type="text/javascript" charset="utf8"></script>
+<script src="./Editor/js/dataTables.editor.min.js" type="text/javascript" charset="utf8"></script>
+<script src='table.js'></script>
+</head>
+<body>
+<div style="padding: 1em">
+        <div>
+        <h1 class="bd-title" style="text-align:center">GT Nutrition Tracker</h1>
+        </div>
+
+        <div>
+            <h2 class="bd-title">Food Lookup</h1>
+            <p>Browse through GT Dining's food options and find your next meal! You can use the dropdowns later on to add meals to your Log and Wishlist.</p>
+        </div>
+
+    <div>
+        <table id="table1" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Extn.</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Extn.</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <br>
+
+    <div>
+        <h2 class="bd-title">Wishlist</h1>
+        <p>Add meals to your Wishlist using the dropdown to help plan your future meals. Remember that the nutrition sums at the bottom include the meals already in your Log!</p>
+    </div>
+
+    <div class="input-group">
+        <select class="selectpicker" data-width="92%" data-live-search="true" id="foods2"></select>
+        <button type="button" id="foods2-button" style="width:7%"" class="btn btn-primary float-right">Add</button>
+    </div>
+    <br>
+        <table id="table2" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Name1</th>
+                    <th>Position1</th>
+                    <th>Office1</th>
+                    <th>Extn.1</th>
+                    <th>Start date1</th>
+                    <th>Salary1</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Sum</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    
+    <br>
+
+    <div>
+        <h2 class="bd-title">Log</h1>
+        <p>Add meals you've eaten to your Log using the dropdown. Use the nutrition sums at the bottom to track your daily intake! </p>
+    </div>
+
+    <div class="input-group">
+        <select class="selectpicker" data-width="92%" data-live-search="true" id="foods3"></select>
+        <button type="button" id="foods3-button" style="width:7%"" class="btn btn-primary float-right">Add</button>
+    </div>    
+    <br>
+    <div>
+        <table id="table3" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Name2</th>
+                    <th>Position2</th>
+                    <th>Office2</th>
+                    <th>Extn.2</th>
+                    <th>Start date2</th>
+                    <th>Salary2</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Sum</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
