@@ -2,6 +2,7 @@ var table1; // use a global for the submit and return data rendering in the exam
 var table2;
 var table3;
 var editor;
+var table3sum;
 var data =  [
     {
       "name": "Nixon",
@@ -46,16 +47,14 @@ $(document).ready(function() {
         { data: "salary" },
     ]
     });
-        // Delete a record
 
     table2 = $('#table2').DataTable(
          {"footerCallback": function(row, data, start, end, display) {
             var api = this.api();
-
             $( api.column( 5 ).footer() ).html(
               api.column( 5 ).data().reduce( function ( a, b ) {
                   return parseFloat(a) + parseFloat(b);
-              }, 0 )
+              }, table3sum )
             );
 
           },
@@ -72,12 +71,14 @@ $(document).ready(function() {
      table3 = $('#table3').DataTable(
         {"footerCallback": function(row, data, start, end, display) {
             var api = this.api();
-           
+            table3sum = 0;
             $( api.column( 5 ).footer() ).html(
               api.column( 5 ).data().reduce( function ( a, b ) {
+                  table3sum += parseFloat(a)+parseFloat(b);
                   return parseFloat(a) + parseFloat(b);
               }, 0 )
             );
+            $('#table2').DataTable().draw(false);
 
           },
        columns: [
