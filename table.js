@@ -156,6 +156,7 @@ $(document).ready(function() {
       }
       table2.rows.add(table_2_add).draw();
     }
+    console.log('table 2 cookies done');
 
     table3_cookie = (getCookie('table2_cookie'));
     if (table3_cookie !== '') {
@@ -166,4 +167,5 @@ $(document).ready(function() {
       }
       table3.rows.add(table_3_add).draw();
     }
+    console.log('table 3 cookies done');
 } );
