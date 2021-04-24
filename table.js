@@ -101,7 +101,7 @@ $(document).ready(function() {
 
     $('#table2').on( 'click', 'tbody tr', function () {
         table2.row(this).remove().draw();
-        var l = table2.column(0).length;
+        var l = table2.column(0).data().length;
         var table2_cookie_array = [];
         for (i = 0; i < l; i++) {
           table2_cookie_array.push(table2.column(0).data()[i])
@@ -114,7 +114,7 @@ $(document).ready(function() {
 
     $('#table3').on( 'click', 'tbody tr', function () {
       table3.row(this).remove().draw();
-      var l = table3.column(0).length;
+      var l = table3.column(0).data().length;
       table3_cookie_array = [];
       for (i = 0; i < l; i++) {
         table3_cookie_array.push(table3.column(0).data()[i])
@@ -128,7 +128,7 @@ $(document).ready(function() {
     $('#foods2-button').click(function() {
       var food = $('#foods2 option:selected').text();
       table2.rows.add(data.filter(obj => obj['Food Item'] === food)).draw()
-      var l = table2.column(0).length;
+      var l = table2.column(0).data().length;
       var table2_cookie_array = [];
       for (i = 0; i < l; i++) {
         table2_cookie_array.push(table2.column(0).data()[i])
@@ -142,7 +142,7 @@ $(document).ready(function() {
     $('#foods3-button').click(function() {
       var food = $('#foods3 option:selected').text();
       table3.rows.add(data.filter(obj => obj['Food Item'] === food)).draw()
-      var l = table3.column(0).length;
+      var l = table3.column(0).data().length;
       var table3_cookie_array = [];
       for (i = 0; i < l; i++) {
         table3_cookie_array.push(table3.column(0).data()[i])
