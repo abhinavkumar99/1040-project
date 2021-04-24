@@ -148,6 +148,7 @@ $(document).ready(function() {
     })
     table1.rows.add(data).draw();
     table2_cookie = (getCookie('table2_cookie'));
+    console.log(table2_cookie);
     if (table2_cookie !== '') {
       table2_cookie = JSON.parse(table2_cookie);
       var table_2_add = [];
@@ -158,7 +159,8 @@ $(document).ready(function() {
     }
     console.log('table 2 cookies done');
 
-    table3_cookie = (getCookie('table2_cookie'));
+    table3_cookie = (getCookie('table3_cookie'));
+    console.log(table3_cookie);
     if (table3_cookie !== '') {
       table3_cookie = JSON.parse(table3_cookie);
       var table_3_add = [];
