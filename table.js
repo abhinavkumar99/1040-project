@@ -134,6 +134,7 @@ $(document).ready(function() {
         table2_cookie_array.push(table2.column(0).data()[i])
       }
       console.log('table2_cookie_array');
+      
       console.log(table2_cookie_array);
       setCookie('table2_cookie', JSON.stringify(table2_cookie_array), 3);
       // document.cookie = 'table2_cookie='+JSON.stringify(table2_cookie) + ': table3_cookie' + JSON.stringify(table3_cookie);
